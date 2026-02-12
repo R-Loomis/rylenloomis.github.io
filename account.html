@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Register Account</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="sidebar" id="sidebar">
+        <button class="close-btn" onclick="toggleSidebar()">✕</button>
+        <h2>Shop</h2>
+        <ul>
+            <li>New Arrivals</li>
+        </ul>
+  
+    <div class="sidebar-bottom">
+    <hr>
+    <a href="aboutus.html" class="bottom-link">About Us</a>
+    <a href="contactus.html" class="bottom-link">Contact Us</a>
+</div>
+
+</div>
+    
+    </div>
+
+    <div class="overlay" id="overlay" onclick="toggleSidebar()"></div>
+    
+    <header class="header">
+        <div class="header-left">
+            <div class="menu-icon">☰</div>
+            <a href="index.html" class="nav-button">Home</a>
+        </div>
+
+        <div class="header-center">
+            <input type="text" class="search-bar" placeholder="Search products...">
+        </div>
+
+        <div class="header-right">
+            <a href="account.html" class="nav-button">Account</a>
+            
+            <div class="cart">
+                <a href="shoppingcart.html" class="nav-button">Cart</a>
+            </div>
+        </div>
+    
+    </header>
+
+    <div style="
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 80vh;
+    ">
+        <div class="card" style="width: 350px; text-align: center;">
+            <h2>Welcome</h2>
+            <p>Please choose an option</p>
+
+            <br>
+
+            <a href="registerform.html" class="btn-link">Register</a>
+            <br><br>
+            <a href="loginform.html" class="btn-link">Login</a>
+        </div>
+    </div>
+
+    <script>
+        function toggleSidebar() {
+            document.getElementById("sidebar").classList.toggle("active");
+            document.getElementById("overlay").classList.toggle("active");
+        }
+    </script>
+
+</body>
+</html>

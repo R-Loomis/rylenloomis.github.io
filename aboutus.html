@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>About Us</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="sidebar" id="sidebar">
+        <button class="close-btn" onclick="toggleSidebar()">✕</button>
+        <h2>Shop</h2>
+        <ul>
+            <li>New Arrivals</li>
+            <li>Men</li>
+            <li>Women</li>
+            <li>Kids</li>
+            <li>Shoes</li>
+            <li>Accessories</li>
+            <li>Sale</li>
+        </ul>
+  
+    <div class="sidebar-bottom">
+    <hr>
+    <a href="aboutus.html" class="bottom-link">About Us</a>
+    <a href="contactus.html" class="bottom-link">Contact Us</a>
+</div>
+
+</div>
+    
+    </div>
+
+    <div class="overlay" id="overlay" onclick="toggleSidebar()"></div>
+
+    <header class="header">
+
+        <div class="header-left">
+            <div class="menu-icon" onclick="toggleSidebar()">☰</div>
+            <a href="index.html" class="nav-button">Home</a>
+        </div>
+
+        <div class="header-center">
+            <input type="text" class="search-bar" placeholder="Search products...">
+        </div>
+
+        <div class="header-right">
+            <a href="account.html" class="nav-button">Account</a>
+            
+            <div class="cart">
+                <button class="nav-button">Cart</button>
+            </div>
+        </div>
+
+    </header>
+
+    <div class="container">
+        <div class="card">
+            <h2>About Us</h2>
+            <p>This is where you can learn more about our company.</p>
+        </div>
+    </div>
+
+    <script>
+        function toggleSidebar() {
+            document.getElementById("sidebar").classList.toggle("active");
+            document.getElementById("overlay").classList.toggle("active");
+        }
+    </script>
+
+</body>
+
+</html>
